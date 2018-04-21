@@ -1,0 +1,39 @@
+{
+  "name": "botlib",
+  "version": "0.0.9",
+  "description": "General Bots base library for building Node.js TypeScript Apps packages (.gbapp)",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "author": "me@rodrigorodriguez.com",
+  "license": "AGPL-3.0",
+  "dependencies": {
+    "@types/azure": "^0.9.19",
+    "async": "^1.5.2",
+    "botbuilder": "^3.14.0",
+    "botbuilder-location": "^2.0.0",
+    "chrono-node": "^1.2.5",
+    "dotenv-extended": "^1.0.4",
+    "eslint": "^4.19.1",
+    "iconv-lite": "^0.4.19",
+    "pragmatismo-io-framework": "^1.0.2",
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.37.6",
+    "text-parse": "^3.0.0",
+    "textract": "^2.2.0",
+    "typescript": "^2.7.1",
+    "urljoin": "^0.1.5",
+    "wait-until": "0.0.2",
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/sequelize": "^4.27.14",
+    "@types/chai": "4.0.4",
+    "@types/mocha": "2.2.43",
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "mocha-typescript": "^1.1.12",
+    "ts-node": "3.3.0",
+    "typedoc": "^0.10.0",
+    "typescript": "2.7.2"
+  }
+}
