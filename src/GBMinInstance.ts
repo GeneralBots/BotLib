@@ -30,12 +30,12 @@
 |                                                                             |
 \*****************************************************************************/
 
-import { AzureText } from "pragmatismo-io-framework1";
+
 import { UniversalBot } from "botbuilder";
 import { IGBInstance } from "./IGBinstance";
 import { IGBCoreService } from "./IGBCoreService";
 import { IGBConversationalService, IGBPackage } from ".";
-
+import { AzureText } from "pragmatismo-io-framework";
 
 /** Minimal services for bot. */
 
