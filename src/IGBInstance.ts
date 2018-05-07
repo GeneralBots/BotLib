@@ -45,10 +45,12 @@ export interface IGBInstance {
     textAnalyticsKey: string;
     marketplacePassword: string;
     webchatKey: string;
+    whatsappKey: string;
     theme: string;
     ui: string;
     kb: string;
     nlpServerUrl: string;
+    spellcheckerKey: string;
     searchHost: string;
     searchKey: string;
     searchIndex: string;
