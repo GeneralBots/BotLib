@@ -47,6 +47,7 @@ export interface IGBInstance {
     webchatKey: string;
     whatsappServiceKey: string;
     whatsappBotKey: string;
+    whatsappServiceNumber: string;
     theme: string;
     ui: string;
     kb: string;
