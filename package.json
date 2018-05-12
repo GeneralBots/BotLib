@@ -1,12 +1,17 @@
 {
   "name": "botlib",
-  "version": "0.0.20",
+  "version": "0.0.21",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp)",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
   "contributors": [
     "Rodrigo Rodriguez <me@rodrigorodriguez.com>"
   ],
+  "homepage": "http://www.generalbot.com",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/pragmatismo-io/BotLib"
+  },
   "license": "AGPL-3.0",
   "dependencies": {
     "@types/azure": "^0.9.19",
