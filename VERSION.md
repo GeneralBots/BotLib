@@ -1,5 +1,17 @@
 # History
 
+## Version 0.0.20
+
+- NEW: Whatsapp directline client is now working in preview.
+
+## Version 0.0.19
+
+- NEW: Parameter whatsappServiceUrl added to support other whatsapp channels.
+
+## Version 0.0.18
+
+- FIX: Missing TS compilation.
+
 ## Version 0.0.17
 
 - NEW: The bot now has an associated mobile Whatsapp number;
