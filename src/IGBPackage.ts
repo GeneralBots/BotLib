@@ -39,6 +39,10 @@ import { Session } from 'botbuilder';
 "use strict";
 
 export interface IGBPackage{
+
+    /** Each app has its own set of sys packages. */
+    sysPackages: IGBPackage[];
+
     /** Called when a package is being loaded, once per server or at demand. */
     loadPackage(core: IGBCoreService, sequelize: Sequelize): void;
 
