@@ -3,6 +3,7 @@
 ## Version 0.0.20
 
 - NEW: Whatsapp directline client is now working in preview.
+- NEW: Parameter whatsappServiceWebhookUrl added.
 
 ## Version 0.0.19
 
