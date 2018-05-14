@@ -1,5 +1,13 @@
 # History
 
+## Version 0.0.22
+
+- FIX: Packages updated.
+
+## Version 0.0.21
+
+- FIX: Whatsapp directline client improved.
+
 ## Version 0.0.20
 
 - NEW: Whatsapp directline client is now working in preview.
