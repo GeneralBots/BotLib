@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp)",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -16,7 +16,7 @@
   "dependencies": {
     "@types/azure": "^0.9.19",
     "async": "^2.6.0",
-    "botbuilder": "^3.14.0",
+    "botbuilder": "^3.15.0",
     "botbuilder-location": "^2.0.0",
     "chrono-node": "^1.2.5",
     "dotenv-extended": "^2.0.2",
@@ -25,8 +25,6 @@
     "pragmatismo-io-framework": "^1.0.11",
     "reflect-metadata": "^0.1.12",
     "sequelize": "^4.37.6",
-    "text-parse": "^3.0.0",
-    "textract": "^2.2.0",
     "typescript": "^2.7.1",
     "urljoin": "^0.1.5",
     "wait-until": "0.0.2",
