@@ -8,9 +8,9 @@
     "Rodrigo Rodriguez <me@rodrigorodriguez.com>"
   ],
   "homepage": "http://www.generalbot.com",
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/pragmatismo-io/BotLib"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pragmatismo-io/BotLib"
   },
   "license": "AGPL-3.0",
   "dependencies": {
