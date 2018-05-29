@@ -1,9 +1,15 @@
 # History
 
+## Version 0.0.25
+
+- FIX: Packages updated.
+
 ## Version 0.0.24
-- Update of dependencies versions (package.json).
+
+- FIX: Packages updated.
 
 ## Version 0.0.23
+
 - FIX: Trying to remove botbuilder dependency on hoek vunerability with no success, MS is promissing update it: https://github.com/Microsoft/BotBuilder/issues/4206.
 
 ## Version 0.0.22
