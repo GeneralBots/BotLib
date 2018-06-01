@@ -54,6 +54,7 @@ export interface IGBInstance {
     ui: string;
     kb: string;
     nlpServerUrl: string;
+    speechKey: string;
     spellcheckerKey: string;
     searchHost: string;
     searchKey: string;
