@@ -1,5 +1,13 @@
 # History
 
+## Version 0.0.28
+
+- FIX: Package compiled.
+
+## Version 0.0.27
+
+- FIX: Merged changes.
+
 ## Version 0.0.26
 
 - NEW: Support for Speech recognition/synthesis.
