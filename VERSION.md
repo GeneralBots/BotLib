@@ -1,5 +1,14 @@
 # History
 
+## Version 0.0.30
+
+- FIX: Packages updated.
+- FIX: Missing some 'use strict'.
+
+## Version 0.0.29
+
+- FIX: Packages updated.
+
 ## Version 0.0.28
 
 - FIX: Package compiled.
