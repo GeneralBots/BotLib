@@ -1,5 +1,9 @@
 # History
 
+## Version 0.0.31
+
+- FIX: Export of Sequelize from sequelize-typescript.
+
 ## Version 0.0.30
 
 - FIX: Packages updated.

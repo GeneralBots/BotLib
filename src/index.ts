@@ -32,7 +32,7 @@
 
 'use strict';
 
-export { Sequelize } from 'sequelize';
+export { Sequelize } from 'sequelize-typescript';
 
 import { GBMinInstance } from './GBMinInstance';
 import { GBService } from './GBService';
