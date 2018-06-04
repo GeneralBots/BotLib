@@ -31,7 +31,8 @@
 \*****************************************************************************/
 
 
-import { UniversalBot } from "botbuilder";
+import { BotAdapter, UserState } from "botbuilder";
+import { DialogSet } from "botbuilder-dialogs"
 import { IGBInstance } from "./IGBinstance";
 import { IGBCoreService } from "./IGBCoreService";
 import { IGBConversationalService, IGBPackage } from ".";
@@ -46,9 +47,12 @@ export class GBMinInstance {
   core: IGBCoreService;
   conversationalService: IGBConversationalService;
   textServices: AzureText;
-  bot: UniversalBot;
-
+  bot: BotAdapter;
+  dialogs: DialogSet;
+  userState: UserState;
+  
   constructor() {
     this.packages = [];
+    this.dialogs = new DialogSet();
   }
 }

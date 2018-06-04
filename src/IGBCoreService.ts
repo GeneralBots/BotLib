@@ -32,7 +32,6 @@
 
 "use strict";
 
-import { UniversalBot, Session } from "botbuilder";
 import { GBMinInstance } from "./GBMinInstance";
 import { GBServiceCallback } from "./GBService";
 import { Sequelize } from "sequelize-typescript";

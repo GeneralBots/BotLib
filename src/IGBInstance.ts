@@ -53,6 +53,8 @@ export interface IGBInstance {
     theme: string;
     ui: string;
     kb: string;
+    nlpAppId: string;
+    nlpSubscriptionKey: string;
     nlpServerUrl: string;
     speechKey: string;
     spellcheckerKey: string;

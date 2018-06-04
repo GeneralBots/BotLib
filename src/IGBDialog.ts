@@ -1,3 +1,4 @@
+import { BotAdapter } from 'botbuilder';
 /*****************************************************************************\
 |                                               ( )_  _                       |
 |    _ _    _ __   _ _    __    ___ ___     _ _ | ,_)(_)  ___   ___     _     |
@@ -32,21 +33,12 @@
 
 "use strict";
 
-import {
-  IChatConnectorSettings,
-  IDialogResult,
-  IFindMatchResult,
-  Session,
-  Prompts,
-  ChatConnector,
-  UniversalBot
-} from "botbuilder";
 import { GBService } from "./GBService";
 
 export class IGBDialog {
-  bot: UniversalBot;
+  bot: BotAdapter;
   service: GBService;
-  constructor(bot: UniversalBot) {
+  constructor(bot: BotAdapter) {
 
   }
 }

@@ -34,7 +34,6 @@
 import { IGBCoreService } from './IGBCoreService';
 import { Sequelize, Model } from 'sequelize-typescript';
 import { GBMinInstance } from '.';
-import { Session } from 'botbuilder';
 
 "use strict";
 
@@ -55,7 +54,7 @@ export interface IGBPackage{
     /** Called whenever a bot instance needs to be shutdown. */
     unloadBot(min: GBMinInstance): void;
 
-    /** Called in each new session. */
-    onNewSession(min: GBMinInstance, session: Session): void;
+    /** Called in each new dc. */
+    onNewSession(min: GBMinInstance, dc: any): void;
 
 }
