@@ -1,5 +1,26 @@
 # History
 
+## Version 0.0.33
+
+- FIX: Updated dependencies versions.
+
+## Version 0.0.32
+
+- FIX: Updated dependencies versions.
+
+## Version 0.0.31
+
+- FIX: Export of Sequelize from sequelize-typescript.
+
+## Version 0.0.30
+
+- FIX: Packages updated.
+- FIX: Missing some 'use strict'.
+
+## Version 0.0.29
+
+- FIX: Packages updated.
+
 ## Version 0.0.28
 
 - FIX: Package compiled.
