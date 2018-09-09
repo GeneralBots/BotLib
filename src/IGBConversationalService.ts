@@ -33,16 +33,12 @@
 "use strict";
 
 import { GBMinInstance } from "./GBMinInstance";
-import { GBServiceCallback } from "./GBService";
-import { DialogContext } from "botbuilder-dialogs";
 
 export interface IGBConversationalService {
     sendEvent(dc:any, name: string, value: any);
     runNLP(
         dc:any,
         min: GBMinInstance,
-        text: string,
-        cb: GBServiceCallback<any>
+        text: string
       );  
-    
 }

@@ -39,6 +39,5 @@ export class IGBDialog {
   bot: BotAdapter;
   service: GBService;
   constructor(bot: BotAdapter) {
-
   }
 }

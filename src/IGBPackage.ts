@@ -32,29 +32,40 @@
 
 
 import { IGBCoreService } from './IGBCoreService';
-import { Sequelize, Model } from 'sequelize-typescript';
+import { Sequelize } from 'sequelize-typescript';
 import { GBMinInstance } from '.';
 
-"use strict";
+// TODO: Include "use strict"; in all files.
 
 export interface IGBPackage{
 
-    /** Each app has its own set of sys packages. */
+    /** 
+     * Each app has its own set of sys packages. 
+     */
     sysPackages: IGBPackage[];
 
-    /** Called when a package is being loaded, once per server or at demand. */
+    /** 
+     * Called when a package is being loaded, once per server or at demand. 
+     */
     loadPackage(core: IGBCoreService, sequelize: Sequelize): void;
 
-    /** Called when a package needs to be unloaded. */
+    /** 
+     * Called when a package needs to be unloaded. 
+     */
     unloadPackage(core: IGBCoreService): void;
 
-    /** Called when a new bot instance is loaded. */
+    /** 
+     * Called when a new bot instance is loaded. 
+     */
     loadBot(min: GBMinInstance): void;
 
-    /** Called whenever a bot instance needs to be shutdown. */
+    /** 
+     * Called whenever a bot instance needs to be shutdown.
+     */
     unloadBot(min: GBMinInstance): void;
 
-    /** Called in each new dc. */
+    /**
+     * Called in each new dc. 
+     */
     onNewSession(min: GBMinInstance, dc: any): void;
-
 }

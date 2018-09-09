@@ -32,8 +32,4 @@
 
 'use strict';
 
-import { GBError } from './GBError';
-
-export interface GBServiceCallback<T> { (data: T, error: GBError): void }
-
 export class GBService { }

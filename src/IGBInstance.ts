@@ -36,10 +36,9 @@ export interface IGBInstance {
     botId:string;
     whoAmIVideo: string;
     applicationPrincipal: string;
-    tenant: string;
-    signUpSignInPolicy: "b2c_1_susi",
-    clientID: '47cbaa05-dbb4-46f8-8608-da386c5131f1'}
-
+    authenticatorTenant: string;
+    authenticatorsignUpSignInPolicy: string;
+    authenticatorClientID: string;
     instanceId: number;
     title: string;
     description: string;

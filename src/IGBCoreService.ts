@@ -32,16 +32,17 @@
 
 "use strict";
 
-import { GBMinInstance } from "./GBMinInstance";
-import { GBServiceCallback } from "./GBService";
 import { Sequelize } from "sequelize-typescript";
 import { IGBInstance } from "./IGBInstance";
 
+/**
+ * This interface defines the core service which is shared among
+ * bot packages so they can have direct access to base services.
+ */
 export interface IGBCoreService {
     sequelize: Sequelize;
-    initDatabase(cb);
-    syncDatabaseStructure(cb);
-    loadInstances(cb: GBServiceCallback<IGBInstance[]>);
-    loadInstance(botId: string, cb: GBServiceCallback<IGBInstance>);
-    
+    initDatabase();
+    syncDatabaseStructure();
+    loadInstances(): IGBInstance[];
+    loadInstance(botId: string): IGBInstance;
 }

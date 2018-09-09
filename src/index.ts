@@ -33,15 +33,6 @@
 'use strict';
 
 export { Sequelize } from 'sequelize-typescript';
-
-import { GBMinInstance } from './GBMinInstance';
-import { GBService } from './GBService';
-import { GBError } from './GBError';
-import { IGBPackage } from './IGBPackage';
-import { IGBDialog } from './IGBDialog';
-import { IGBCoreService } from './IGBCoreService';
-import { IGBConversationalService } from './IGBConversationalService';
-
 export { IGBConversationalService } from './IGBConversationalService';
 export { IGBCoreService } from './IGBCoreService';
 export { IGBDialog } from './IGBDialog';
@@ -49,5 +40,4 @@ export { IGBPackage } from './IGBPackage';
 export { IGBInstance } from './IGBInstance';
 export { GBError, GBERROR_TYPE } from './GBError';
 export { GBService } from './GBService';
-export { GBServiceCallback } from './GBService';
 export { GBMinInstance } from './GBMinInstance';
