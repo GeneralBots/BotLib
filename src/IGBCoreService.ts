@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.              |
 |                                                                             |
 | This program is distributed in the hope that it will be useful,             |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of              |
+| but WITHOUT ANY WARRANTY, without even the implied warranty of              |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
@@ -30,19 +30,19 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict";
+"use strict"
 
-import { Sequelize } from "sequelize-typescript";
-import { IGBInstance } from "./IGBInstance";
+import { Sequelize } from "sequelize-typescript"
+import { IGBInstance } from "./IGBInstance"
 
 /**
  * This interface defines the core service which is shared among
  * bot packages so they can have direct access to base services.
  */
 export interface IGBCoreService {
-    sequelize: Sequelize;
-    initDatabase();
-    syncDatabaseStructure();
-    loadInstances(): IGBInstance[];
-    loadInstance(botId: string): IGBInstance;
+    sequelize: Sequelize
+    initDatabase()
+    syncDatabaseStructure()
+    loadInstances(): IGBInstance[]
+    loadInstance(botId: string): IGBInstance
 }

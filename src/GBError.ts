@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.               |
 |                                                                              |
 | This program is distributed in the hope that it will be useful,              |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of               |
+| but WITHOUT ANY WARRANTY without even the implied warranty of               |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 |
 | GNU Affero General Public License for more details.                          |
 |                                                                              |
@@ -30,7 +30,7 @@
 |                                                                              |
 \******************************************************************************/
 
-'use strict';
+'use strict'
 
 export enum GBERROR_TYPE {
   generalError = 2,
@@ -42,17 +42,17 @@ export class GBError {
 
   getMessageFromErrorCode(type: GBERROR_TYPE) {
     if (type == GBERROR_TYPE.nlpGeneralError) {
-      return `GuaribasBusinessError: Error accessing NLP, check of the service.`;
+      return `GuaribasBusinessError: Error accessing NLP, check of the service.`
     }
   }
 
-  e: Error;
+  e: Error
 
   constructor(e: Error, type: GBERROR_TYPE = GBERROR_TYPE.generalError) {
-    this.e = e;
+    this.e = e
   }
 
   static create(message) {
-    return new GBError(Error(message));
+    return new GBError(Error(message))
   }
 }

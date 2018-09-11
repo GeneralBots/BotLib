@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.              |
 |                                                                             |
 | This program is distributed in the hope that it will be useful,             |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of              |
+| but WITHOUT ANY WARRANTY, without even the implied warranty of              |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
@@ -31,28 +31,28 @@
 \*****************************************************************************/
 
 
-import { BotAdapter, UserState } from "botbuilder";
+import { BotAdapter, UserState } from "botbuilder"
 import { DialogSet } from "botbuilder-dialogs"
-import { IGBInstance } from "./IGBinstance";
-import { IGBCoreService } from "./IGBCoreService";
-import { IGBConversationalService, IGBPackage } from ".";
-import { AzureText } from "pragmatismo-io-framework";
+import { IGBInstance } from "./IGBinstance"
+import { IGBCoreService } from "./IGBCoreService"
+import { IGBConversationalService, IGBPackage } from "."
+import { AzureText } from "pragmatismo-io-framework"
 
 /** Minimal services for bot. */
 
 export class GBMinInstance {
-  packages: IGBPackage[];
-  botId: string;
-  instance: IGBInstance;
-  core: IGBCoreService;
-  conversationalService: IGBConversationalService;
-  textServices: AzureText;
-  bot: BotAdapter;
-  dialogs: DialogSet;
-  userState: UserState;
+  packages: IGBPackage[]
+  botId: string
+  instance: IGBInstance
+  core: IGBCoreService
+  conversationalService: IGBConversationalService
+  textServices: AzureText
+  bot: BotAdapter
+  dialogs: DialogSet
+  userState: UserState
   
   constructor() {
-    this.packages = [];
-    this.dialogs = new DialogSet();
+    this.packages = []
+    this.dialogs = new DialogSet()
   }
 }

@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.              |
 |                                                                             |
 | This program is distributed in the hope that it will be useful,             |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of              |
+| but WITHOUT ANY WARRANTY, without even the implied warranty of              |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
@@ -31,41 +31,41 @@
 \*****************************************************************************/
 
 
-import { IGBCoreService } from './IGBCoreService';
-import { Sequelize } from 'sequelize-typescript';
-import { GBMinInstance } from '.';
+import { IGBCoreService } from './IGBCoreService'
+import { Sequelize } from 'sequelize-typescript'
+import { GBMinInstance } from '.'
 
-// TODO: Include "use strict"; in all files.
+// TODO: Include "use strict" in all files.
 
 export interface IGBPackage{
 
     /** 
      * Each app has its own set of sys packages. 
      */
-    sysPackages: IGBPackage[];
+    sysPackages: IGBPackage[]
 
     /** 
      * Called when a package is being loaded, once per server or at demand. 
      */
-    loadPackage(core: IGBCoreService, sequelize: Sequelize): void;
+    loadPackage(core: IGBCoreService, sequelize: Sequelize): void
 
     /** 
      * Called when a package needs to be unloaded. 
      */
-    unloadPackage(core: IGBCoreService): void;
+    unloadPackage(core: IGBCoreService): void
 
     /** 
      * Called when a new bot instance is loaded. 
      */
-    loadBot(min: GBMinInstance): void;
+    loadBot(min: GBMinInstance): void
 
     /** 
      * Called whenever a bot instance needs to be shutdown.
      */
-    unloadBot(min: GBMinInstance): void;
+    unloadBot(min: GBMinInstance): void
 
     /**
      * Called in each new dc. 
      */
-    onNewSession(min: GBMinInstance, dc: any): void;
+    onNewSession(min: GBMinInstance, dc: any): void
 }

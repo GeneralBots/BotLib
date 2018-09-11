@@ -1,4 +1,4 @@
-import { BotAdapter } from 'botbuilder';
+import { BotAdapter } from 'botbuilder'
 /*****************************************************************************\
 |                                               ( )_  _                       |
 |    _ _    _ __   _ _    __    ___ ___     _ _ | ,_)(_)  ___   ___     _     |
@@ -20,7 +20,7 @@ import { BotAdapter } from 'botbuilder';
 | in the LICENSE file you have received along with this program.              |
 |                                                                             |
 | This program is distributed in the hope that it will be useful,             |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of              |
+| but WITHOUT ANY WARRANTY, without even the implied warranty of              |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
@@ -31,13 +31,13 @@ import { BotAdapter } from 'botbuilder';
 |                                                                             |
 \*****************************************************************************/
 
-"use strict";
+"use strict"
 
-import { GBService } from "./GBService";
+import { GBService } from "./GBService"
 
 export class IGBDialog {
-  bot: BotAdapter;
-  service: GBService;
+  bot: BotAdapter
+  service: GBService
   constructor(bot: BotAdapter) {
   }
 }

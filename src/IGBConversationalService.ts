@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.              |
 |                                                                             |
 | This program is distributed in the hope that it will be useful,             |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of              |
+| but WITHOUT ANY WARRANTY, without even the implied warranty of              |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
@@ -30,15 +30,15 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict";
+"use strict"
 
-import { GBMinInstance } from "./GBMinInstance";
+import { GBMinInstance } from "./GBMinInstance"
 
 export interface IGBConversationalService {
-    sendEvent(dc:any, name: string, value: any);
+    sendEvent(dc:any, name: string, value: any)
     runNLP(
         dc:any,
         min: GBMinInstance,
         text: string
-      );  
+      )  
 }

@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.               |
 |                                                                              |
 | This program is distributed in the hope that it will be useful,              |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of               |
+| but WITHOUT ANY WARRANTY without even the implied warranty of               |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                 |
 | GNU Affero General Public License for more details.                          |
 |                                                                              |
@@ -30,14 +30,14 @@
 |                                                                              |
 \******************************************************************************/
 
-'use strict';
+'use strict'
 
-export { Sequelize } from 'sequelize-typescript';
-export { IGBConversationalService } from './IGBConversationalService';
-export { IGBCoreService } from './IGBCoreService';
-export { IGBDialog } from './IGBDialog';
-export { IGBPackage } from './IGBPackage';
-export { IGBInstance } from './IGBInstance';
-export { GBError, GBERROR_TYPE } from './GBError';
-export { GBService } from './GBService';
-export { GBMinInstance } from './GBMinInstance';
+export { Sequelize } from 'sequelize-typescript'
+export { IGBConversationalService } from './IGBConversationalService'
+export { IGBCoreService } from './IGBCoreService'
+export { IGBDialog } from './IGBDialog'
+export { IGBPackage } from './IGBPackage'
+export { IGBInstance } from './IGBInstance'
+export { GBError, GBERROR_TYPE } from './GBError'
+export { GBService } from './GBService'
+export { GBMinInstance } from './GBMinInstance'

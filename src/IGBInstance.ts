@@ -19,7 +19,7 @@
 | in the LICENSE file you have received along with this program.              |
 |                                                                             |
 | This program is distributed in the hope that it will be useful,             |
-| but WITHOUT ANY WARRANTY; without even the implied warranty of              |
+| but WITHOUT ANY WARRANTY, without even the implied warranty of              |
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
@@ -30,43 +30,44 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict";
+"use strict"
 
 export interface IGBInstance {
-    botId:string;
-    whoAmIVideo: string;
-    applicationPrincipal: string;
-    authenticatorTenant: string;
-    authenticatorsignUpSignInPolicy: string;
-    authenticatorClientID: string;
-    instanceId: number;
-    title: string;
-    description: string;
-    version: string;
-    enabledAdmin: boolean;
-    engineName: string;
-    marketplaceId: string;
-    textAnalyticsKey: string;
-    marketplacePassword: string;
-    webchatKey: string;
-    whatsappServiceKey: string;
-    whatsappBotKey: string;
-    whatsappServiceNumber: string;
-    whatsappServiceUrl: string;
-    whatsappServiceWebhookUrl: string;
-    theme: string;
-    ui: string;
-    kb: string;
-    nlpAppId: string;
-    nlpSubscriptionKey: string;
-    nlpServerUrl: string;
-    speechKey: string;
-    spellcheckerKey: string;
-    searchHost: string;
-    searchKey: string;
-    searchIndex: string;
-    searchIndexer: string;
-    nlpVsSearch: number;
-    searchScore: number;
-    nlpScore: number;
+    botId:string
+    whoAmIVideo: string
+    applicationPrincipal: string
+    authenticatorTenant: string
+    authenticatorsignUpSignInPolicy: string
+    authenticatorClientID: string
+    instanceId: number
+    title: string
+    description: string
+    version: string
+    enabledAdmin: boolean
+    engineName: string
+    marketplaceId: string
+    textAnalyticsKey: string
+    textAnalyticsServerUrl: string
+    marketplacePassword: string
+    webchatKey: string
+    whatsappServiceKey: string
+    whatsappBotKey: string
+    whatsappServiceNumber: string
+    whatsappServiceUrl: string
+    whatsappServiceWebhookUrl: string
+    theme: string
+    ui: string
+    kb: string
+    nlpAppId: string
+    nlpSubscriptionKey: string
+    nlpServerUrl: string
+    speechKey: string
+    spellcheckerKey: string
+    searchHost: string
+    searchKey: string
+    searchIndex: string
+    searchIndexer: string
+    nlpVsSearch: number
+    searchScore: number
+    nlpScore: number
   }
