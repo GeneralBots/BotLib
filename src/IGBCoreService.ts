@@ -34,6 +34,7 @@
 
 import { Sequelize } from "sequelize-typescript"
 import { IGBInstance } from "./IGBInstance"
+import { IGBAdminService } from "./IGBAdminService";
 
 /**
  * This interface defines the core service which is shared among
@@ -41,6 +42,7 @@ import { IGBInstance } from "./IGBInstance"
  */
 export interface IGBCoreService {
     sequelize: Sequelize
+    adminService: IGBAdminService
     initDatabase()
     syncDatabaseStructure()
     loadInstances(): IGBInstance[]

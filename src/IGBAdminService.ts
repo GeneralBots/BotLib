@@ -32,44 +32,7 @@
 
 "use strict"
 
-export interface IGBInstance {
-    botId:string
-    whoAmIVideo: string
-    applicationPrincipal: string
-    authenticatorTenant: string
-    authenticatorClientID: string
-    instanceId: number
-    title: string
-    description: string
-    version: string
-    enabledAdmin: boolean
-    engineName: string
-    marketplaceId: string
-    textAnalyticsKey: string
-    textAnalyticsServerUrl: string
-    marketplacePassword: string
-    webchatKey: string
-    whatsappServiceKey: string
-    whatsappBotKey: string
-    whatsappServiceNumber: string
-    whatsappServiceUrl: string
-    whatsappServiceWebhookUrl: string
-    smsKey: string
-    smsSecret: string
-    smsServiceNumber: string
-    theme: string
-    ui: string
-    kb: string
-    nlpAppId: string
-    nlpSubscriptionKey: string
-    nlpServerUrl: string
-    speechKey: string
-    spellcheckerKey: string
-    searchHost: string
-    searchKey: string
-    searchIndex: string
-    searchIndexer: string
-    nlpVsSearch: number
-    searchScore: number
-    nlpScore: number
-  }
+export interface IGBAdminService {
+    putValue(key: string, value: string);
+    getValue(key: string)
+}
