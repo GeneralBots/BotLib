@@ -1,5 +1,8 @@
 # History
 
+## Version 0.1.0
+- NEW: Migration to Bot Framework v4.
+
 ## Version 0.0.33
 
 - FIX: Updated dependencies versions.
