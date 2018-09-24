@@ -42,7 +42,6 @@ import { IGBAdminService } from "./IGBAdminService";
  */
 export interface IGBCoreService {
     sequelize: Sequelize
-    adminService: IGBAdminService
     initDatabase()
     syncDatabaseStructure()
     loadInstances(): IGBInstance[]

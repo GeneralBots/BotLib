@@ -35,4 +35,5 @@
 export interface IGBAdminService {
     putValue(key: string, value: string);
     getValue(key: string)
+    acquireElevatedToken(instanceId):Promise<string>;
 }

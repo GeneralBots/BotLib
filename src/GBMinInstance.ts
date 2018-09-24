@@ -37,6 +37,7 @@ import { IGBInstance } from "./IGBinstance"
 import { IGBCoreService } from "./IGBCoreService"
 import { IGBConversationalService, IGBPackage } from "."
 import { AzureText } from "pragmatismo-io-framework"
+import { IGBAdminService } from "./IGBAdminService";
 
 /** Minimal services for bot. */
 
@@ -46,6 +47,7 @@ export class GBMinInstance {
   instance: IGBInstance
   core: IGBCoreService
   conversationalService: IGBConversationalService
+  adminService: IGBAdminService
   textServices: AzureText
   bot: BotAdapter
   dialogs: DialogSet
