@@ -1,9 +1,15 @@
 # History
 
+## Version 0.1.3
+
+- FIX: Updated dependencies versions.
+
 ## Version 0.1.2
+
 - NEW: pragmatismo-io-framework updated.
 
 ## Version 0.1.0
+
 - NEW: Migration to Bot Framework v4.
 
 ## Version 0.0.33
