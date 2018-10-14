@@ -65,10 +65,12 @@ export interface IGBInstance {
     ui: string
     kb: string
     nlpAppId: string
-    nlpSubscriptionKey: string
-    nlpServerUrl: string
+    nlpKey: string
+    nlpEndpoint: string
     speechKey: string
+    speechEndpoint: string
     spellcheckerKey: string
+    spellcheckerEndpoint: string
     searchHost: string
     searchKey: string
     searchIndex: string
@@ -76,4 +78,10 @@ export interface IGBInstance {
     nlpVsSearch: number
     searchScore: number
     nlpScore: number
+    storageUsername: string
+    storagePassword: string
+    storageName: string
+    storageServer: string
+    storageDialect: string
+    storagePath: string
   }
