@@ -30,58 +30,63 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict"
+"use strict";
 
 export interface IGBInstance {
-    botId:string
-    whoAmIVideo: string
-    botServerUrl: string
-    authenticatorTenant: string
-    authenticatorClientId: string
-    authenticatorClientSecret: string
-    authenticatorAuthorityHostUrl: string
-    cloudSubscriptionId: string
-    cloudRegion: string
-    instanceId: number
-    title: string
-    description: string
-    version: string
-    enabledAdmin: boolean
-    engineName: string
-    marketplaceId: string
-    textAnalyticsKey: string
-    textAnalyticsServerUrl: string
-    marketplacePassword: string
-    webchatKey: string
-    whatsappServiceKey: string
-    whatsappBotKey: string
-    whatsappServiceNumber: string
-    whatsappServiceUrl: string
-    whatsappServiceWebhookUrl: string
-    smsKey: string
-    smsSecret: string
-    smsServiceNumber: string
-    theme: string
-    ui: string
-    kb: string
-    nlpAppId: string
-    nlpKey: string
-    nlpEndpoint: string
-    speechKey: string
-    speechEndpoint: string
-    spellcheckerKey: string
-    spellcheckerEndpoint: string
-    searchHost: string
-    searchKey: string
-    searchIndex: string
-    searchIndexer: string
-    nlpVsSearch: number
-    searchScore: number
-    nlpScore: number
-    storageUsername: string
-    storagePassword: string
-    storageName: string
-    storageServer: string
-    storageDialect: string
-    storagePath: string
-  }
+  botId: string;
+  whoAmIVideo: string;
+  botEndpoint: string;
+  authenticatorTenant: string;
+  authenticatorClientId: string;
+  authenticatorClientSecret: string;
+  authenticatorAuthorityHostUrl: string;
+  cloudSubscriptionId: string;
+  cloudUsername: string;
+  cloudPassword: string;
+  cloudLocation: string;
+  instanceId: number;
+  title: string;
+  description: string;
+  version: string;
+  enabledAdmin: boolean;
+  engineName: string;
+  marketplaceId: string;
+  textAnalyticsKey: string;
+  textAnalyticsEndpoint: string;
+  marketplacePassword: string;
+  webchatKey: string;
+  whatsappServiceKey: string;
+  whatsappBotKey: string;
+  whatsappServiceNumber: string;
+  whatsappServiceUrl: string;
+  whatsappServiceWebhookUrl: string;
+  smsKey: string;
+  smsSecret: string;
+  smsServiceNumber: string;
+  theme: string;
+  ui: string;
+  kb: string;
+  nlpAppId: string;
+  nlpKey: string;
+  nlpEndpoint: string;
+  nlpAuthoringKey: string;
+  deploymentPaths: string;
+  speechKey: string;
+  speechEndpoint: string;
+  spellcheckerKey: string;
+  spellcheckerEndpoint: string;
+  searchHost: string;
+  searchKey: string;
+  searchIndex: string;
+  searchIndexer: string;
+  nlpVsSearch: number;
+  searchScore: number;
+  nlpScore: number;
+  storageUsername: string;
+  storagePassword: string;
+  storageName: string;
+  storageServer: string;
+  storageDialect: string;
+  storagePath: string;
+  adminPass: string;
+}
