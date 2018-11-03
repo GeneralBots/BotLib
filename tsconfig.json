@@ -23,9 +23,7 @@
   },
   "include": [
     "test/**/*",
-    "src/**/*",
-    "deploy/*.gbapp/**/*",
-    "deploy/*.gblib/**/*"
+    "src/**/*"
   ],
   "exclude": [
     "dist",

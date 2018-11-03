@@ -35,9 +35,9 @@
 import { GBMinInstance } from "./GBMinInstance"
 
 export interface IGBConversationalService {
-    sendEvent(dc:any, name: string, value: any)
+    sendEvent(step:any, name: string, value: any)
     runNLP(
-        dc:any,
+        step:any,
         min: GBMinInstance,
         text: string
       )  

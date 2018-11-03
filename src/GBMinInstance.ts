@@ -42,6 +42,7 @@ import { IGBAdminService } from "./IGBAdminService";
 /** Minimal services for bot. */
 
 export class GBMinInstance {
+
   packages: IGBPackage[]
   botId: string
   instance: IGBInstance
@@ -52,9 +53,9 @@ export class GBMinInstance {
   bot: BotAdapter
   dialogs: DialogSet
   userState: UserState
+  userProfile: any; 
   
   constructor() {
     this.packages = []
-    this.dialogs = new DialogSet()
-  }
+   }
 }

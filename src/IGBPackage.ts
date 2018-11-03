@@ -65,7 +65,7 @@ export interface IGBPackage{
     unloadBot(min: GBMinInstance): void
 
     /**
-     * Called in each new dc. 
+     * Called in each new step. 
      */
-    onNewSession(min: GBMinInstance, dc: any): void
+    onNewSession(min: GBMinInstance, step: any): void
 }
