@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp)",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
@@ -27,7 +27,7 @@
     "dotenv-extended": "2.3.0",
     "iconv-lite": "0.4.24",
     "ms": "2.1.1",
-    "pragmatismo-io-framework": "1.0.17",
+    "pragmatismo-io-framework": "1.0.18",
     "reflect-metadata": "0.1.12",
     "sequelize": "4.41.0",
     "sequelize-typescript": "0.6.6",
