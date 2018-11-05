@@ -1,5 +1,9 @@
 # History
 
+## Version 0.1.4
+
+* New fields to 100% automated development environement setup.
+
 ## Version 0.1.3
 
 - FIX: Updated dependencies versions.
