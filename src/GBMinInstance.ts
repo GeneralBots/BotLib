@@ -30,32 +30,31 @@
 |                                                                             |
 \*****************************************************************************/
 
-
-import { BotAdapter, UserState } from "botbuilder"
-import { DialogSet } from "botbuilder-dialogs"
-import { IGBInstance } from "./IGBinstance"
-import { IGBCoreService } from "./IGBCoreService"
-import { IGBConversationalService, IGBPackage } from "."
-import { AzureText } from "pragmatismo-io-framework"
+import { BotAdapter, UserState } from "botbuilder";
+import { DialogSet } from "botbuilder-dialogs";
+import { IGBInstance } from "./IGBinstance";
+import { IGBCoreService } from "./IGBCoreService";
+import { IGBConversationalService, IGBPackage } from ".";
+import { AzureText } from "pragmatismo-io-framework";
 import { IGBAdminService } from "./IGBAdminService";
 
 /** Minimal services for bot. */
 
 export class GBMinInstance {
+  packages: IGBPackage[];
+  botId: string;
+  instance: IGBInstance;
+  core: IGBCoreService;
+  conversationalService: IGBConversationalService;
+  adminService: IGBAdminService;
+  textServices: AzureText;
+  bot: BotAdapter;
+  dialogs: DialogSet;
+  userState: UserState;
+  userProfile: any;
+  cbMap: {};
 
-  packages: IGBPackage[]
-  botId: string
-  instance: IGBInstance
-  core: IGBCoreService
-  conversationalService: IGBConversationalService
-  adminService: IGBAdminService
-  textServices: AzureText
-  bot: BotAdapter
-  dialogs: DialogSet
-  userState: UserState
-  userProfile: any; 
-  
   constructor() {
-    this.packages = []
-   }
+    this.packages = [];
+  }
 }
