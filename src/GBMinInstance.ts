@@ -53,6 +53,7 @@ export class GBMinInstance {
   userState: UserState;
   userProfile: any;
   cbMap: {};
+  scriptMap: {};
 
   constructor() {
     this.packages = [];
