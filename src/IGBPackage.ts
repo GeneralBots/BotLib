@@ -54,6 +54,11 @@ export interface IGBPackage{
      */
     unloadPackage(core: IGBCoreService): void
 
+   /** 
+     * Called when a new bot instance is loaded. 
+     */
+    getDialogs(min: GBMinInstance) 
+
     /** 
      * Called when a new bot instance is loaded. 
      */
