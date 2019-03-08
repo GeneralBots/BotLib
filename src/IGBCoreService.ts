@@ -34,7 +34,7 @@
 
 import { Sequelize } from "sequelize-typescript"
 import { IGBInstance } from "./IGBInstance"
-import { IGBAdminService } from "./IGBAdminService";
+import { IGBInstallationDeployer } from "./IGBInstallationDeployer";
 
 /**
  * This interface defines the core service which is shared among
@@ -42,8 +42,19 @@ import { IGBAdminService } from "./IGBAdminService";
  */
 export interface IGBCoreService {
     sequelize: Sequelize
-    initDatabase()
     syncDatabaseStructure()
-    loadInstances(): IGBInstance[]
-    loadInstance(botId: string): IGBInstance
+    loadInstances(): Promise<IGBInstance[]> ;
+    loadInstance(botId: string): Promise<IGBInstance> ;
+    loadInstanceById(instanceId: number): Promise<IGBInstance>;
+    initStorage(): Promise<any>;
+    createBootInstance(core: IGBCoreService, installationDeployer: IGBInstallationDeployer, proxyAddress: string);
+    ensureAdminIsSecured();
+    loadSysPackages(core: IGBCoreService);
+    ensureProxy(port): Promise<string>;
+    ensureInstances(instances: IGBInstance[], bootInstance: any, core: IGBCoreService);
+    checkStorage(azureDeployer: IGBInstallationDeployer);
+    saveInstance(fullInstance: any);
+    loadAllInstances(core: IGBCoreService, azureDeployer: IGBInstallationDeployer, proxyAddress: string);
+    openBrowserInDevelopment()
+
 }

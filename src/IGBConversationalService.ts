@@ -30,15 +30,11 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict"
+"use strict";
 
-import { GBMinInstance } from "./GBMinInstance"
+import { GBMinInstance } from "./GBMinInstance";
 
 export interface IGBConversationalService {
-    sendEvent(step:any, name: string, value: any)
-    runNLP(
-        step:any,
-        min: GBMinInstance,
-        text: string
-      )  
+  sendEvent(step: any, name: string, value: any);
+  routeNLP(step: any, min: GBMinInstance, text: string): Promise<boolean>;
 }

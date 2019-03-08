@@ -30,34 +30,29 @@
 |                                                                             |
 \*****************************************************************************/
 
-import { BotAdapter, UserState } from "botbuilder";
-import { DialogSet } from "botbuilder-dialogs";
-import { IGBInstance } from "./IGBinstance";
-import { IGBCoreService } from "./IGBCoreService";
-import { IGBConversationalService, IGBPackage } from ".";
-import { AzureText } from "pragmatismo-io-framework";
-import { IGBAdminService } from "./IGBAdminService";
+"use strict";
 
-/** Minimal services for bot. */
+import { IGBInstance } from "./IGBInstance";
 
-export class GBMinInstance {
-  packages: IGBPackage[];
-  botId: string;
-  instance: IGBInstance;
-  core: IGBCoreService;
-  conversationalService: IGBConversationalService;
-  adminService: IGBAdminService;
-  textServices: AzureText;
-  bot: BotAdapter;
-  dialogs: DialogSet;
-  userState: UserState;
-  userProfile: any;
-
-  cbMap: {};
-  scriptMap: {};
-  sandBoxMap: {};
-
-  constructor() {
-    this.packages = [];
-  }
+export interface IGBInstallationDeployer {
+  updateBotProxy(botId: string, group: string, endpoint: string);
+  getSubscriptions(credentials);
+  getKBSearchSchema(indexName);
+  openStorageFirewall(groupName, serverName);
+  deployFarm(
+    proxyAddress: string,
+    instance: IGBInstance,
+    credentials,
+    subscriptionId: string
+  ): Promise<IGBInstance>;
+  deployToCloud(
+    title: string,
+    username: string,
+    password: string,
+    cloudLocation: string,
+    authoringKey: string,
+    appId: string,
+    appPassword: string,
+    subscriptionId: string
+  );
 }

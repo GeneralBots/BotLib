@@ -32,8 +32,18 @@
 
 "use strict"
 
+import { IGBInstance } from "./IGBinstance";
+
 export interface IGBAdminService {
-    putValue(key: string, value: string);
-    getValue(key: string)
+    
+    getValue(instanceId: number, key: string): any;
     acquireElevatedToken(instanceId):Promise<string>;
+    updateSecurityInfo(
+        instanceId: number,
+        authenticatorTenant: string,
+        authenticatorAuthorityHostUrl: string,
+        authenticatorClientId: string,
+        authenticatorClientSecret: string
+      ): Promise<IGBInstance> ;
+    setValue(instanceId: number, key: string, value: string): void;
 }
