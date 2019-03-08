@@ -33,8 +33,10 @@
 "use strict";
 
 import { GBMinInstance } from "./GBMinInstance";
+import { GBDialogStep } from "./GBDialogStep";
 
 export interface IGBConversationalService {
-  sendEvent(step: any, name: string, value: any);
-  routeNLP(step: any, min: GBMinInstance, text: string): Promise<boolean>;
+  sendEvent(step: GBDialogStep, name: string, value: string);
+  routeNLP(step: GBDialogStep, min: GBMinInstance, text: string): Promise<boolean>;
+  getCurrentLanguage(step: GBDialogStep);
 }

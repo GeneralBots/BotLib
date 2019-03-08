@@ -9,7 +9,7 @@
 |                                                                             |
 | General Bots Copyright (c) Pragmatismo.io. All rights reserved.             |
 | Licensed under the AGPL-3.0.                                                |
-|                                                                             | 
+|                                                                             |
 | According to our dual licensing model, this program can be used either      |
 | under the terms of the GNU Affero General Public License, version 3,        |
 | or under a proprietary license.                                             |
@@ -30,48 +30,47 @@
 |                                                                             |
 \*****************************************************************************/
 
+/**
+ * @fileoverview Logging support.
+ */
 
-import { IGBCoreService } from './IGBCoreService'
-import { Sequelize } from 'sequelize-typescript'
-import { GBMinInstance } from '.'
-import { GBDialogStep } from './GBDialogStep';
+const { createLogger, format, transports } = require('winston');
 
-// TODO: Include "use strict" in all files.
+const config = {
+  levels: {
+    error: 0,
+    debug: 1,
+    warn: 2,
+    data: 3,
+    info: 4,
+    verbose: 5,
+    silly: 6,
+    custom: 7
+  },
+  colors: {
+    error: 'red',
+    debug: 'blue',
+    warn: 'yellow',
+    data: 'grey',
+    info: 'green',
+    verbose: 'cyan',
+    silly: 'magenta',
+    custom: 'yellow'
+  }
+};
 
-export interface IGBPackage{
+const logger = createLogger({
+  format: format.combine(
+    format.colorize(),
+    format.simple(),
+    format.label({ label: 'GeneralBots' }),
+    format.timestamp(),
+    format.printf(nfo => {
+      return `${nfo.timestamp} [${nfo.label}] ${nfo.level}: ${nfo.message}`;
+    })
+  ),
+  levels: config.levels,
+  transports: [new transports.Console()]
+});
 
-    /** 
-     * Each app has its own set of sys packages. 
-     */
-    sysPackages: IGBPackage[]
-
-    /** 
-     * Called when a package is being loaded, once per server or at demand. 
-     */
-    loadPackage(core: IGBCoreService, sequelize: Sequelize): void
-
-    /** 
-     * Called when a package needs to be unloaded. 
-     */
-    unloadPackage(core: IGBCoreService): void
-
-   /** 
-     * Called when a new bot instance is loaded. 
-     */
-    getDialogs(min: GBMinInstance) 
-
-    /** 
-     * Called when a new bot instance is loaded. 
-     */
-    loadBot(min: GBMinInstance): void
-
-    /** 
-     * Called whenever a bot instance needs to be shutdown.
-     */
-    unloadBot(min: GBMinInstance): void
-
-    /**
-     * Called in each new session. 
-     */
-    onNewSession(min: GBMinInstance, step: GBDialogStep): void
-}
+module.exports = logger;
