@@ -2,14 +2,14 @@
 |                                               ( )_  _                       |
 |    _ _    _ __   _ _    __    ___ ___     _ _ | ,_)(_)  ___   ___     _     |
 |   ( '_`\ ( '__)/'_` ) /'_ `\/' _ ` _ `\ /'_` )| |  | |/',__)/' _ `\ /'_`\   |
-|   | (_) )| |  ( (_| |( (_) || ( ) ( ) |( (_| || |_ | |\__, \| ( ) |( (_) )  |
+|   | (_) )| |  ( (_| |( (_) || ( ) ( ) |( (_| || |_ | |\__, \| (˅) |( (_) )  |
 |   | ,__/'(_)  `\__,_)`\__  |(_) (_) (_)`\__,_)`\__)(_)(____/(_) (_)`\___/'  |
 |   | |                ( )_) |                                                |
 |   (_)                 \___/'                                                |
 |                                                                             |
 | General Bots Copyright (c) Pragmatismo.io. All rights reserved.             |
 | Licensed under the AGPL-3.0.                                                |
-|                                                                             | 
+|                                                                             |
 | According to our dual licensing model, this program can be used either      |
 | under the terms of the GNU Affero General Public License, version 3,        |
 | or under a proprietary license.                                             |
@@ -36,7 +36,7 @@ import { GBMinInstance } from "./GBMinInstance";
 import { GBDialogStep } from "./GBDialogStep";
 
 export interface IGBConversationalService {
-  sendEvent(step: GBDialogStep, name: string, value: string);
+  sendEvent(step: GBDialogStep, name: string, value: Object);
   routeNLP(step: GBDialogStep, min: GBMinInstance, text: string): Promise<boolean>;
   getCurrentLanguage(step: GBDialogStep);
 }

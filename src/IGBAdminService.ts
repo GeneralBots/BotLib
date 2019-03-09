@@ -2,14 +2,14 @@
 |                                               ( )_  _                       |
 |    _ _    _ __   _ _    __    ___ ___     _ _ | ,_)(_)  ___   ___     _     |
 |   ( '_`\ ( '__)/'_` ) /'_ `\/' _ ` _ `\ /'_` )| |  | |/',__)/' _ `\ /'_`\   |
-|   | (_) )| |  ( (_| |( (_) || ( ) ( ) |( (_| || |_ | |\__, \| ( ) |( (_) )  |
+|   | (_) )| |  ( (_| |( (_) || ( ) ( ) |( (_| || |_ | |\__, \| (˅) |( (_) )  |
 |   | ,__/'(_)  `\__,_)`\__  |(_) (_) (_)`\__,_)`\__)(_)(____/(_) (_)`\___/'  |
 |   | |                ( )_) |                                                |
 |   (_)                 \___/'                                                |
 |                                                                             |
 | General Bots Copyright (c) Pragmatismo.io. All rights reserved.             |
 | Licensed under the AGPL-3.0.                                                |
-|                                                                             | 
+|                                                                             |
 | According to our dual licensing model, this program can be used either      |
 | under the terms of the GNU Affero General Public License, version 3,        |
 | or under a proprietary license.                                             |
@@ -30,20 +30,20 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict"
+"use strict";
 
 import { IGBInstance } from "./IGBinstance";
 
 export interface IGBAdminService {
+  acquireElevatedToken(instanceId): Promise<string>;
+  updateSecurityInfo(
+    instanceId: number,
+    authenticatorTenant: string,
+    authenticatorAuthorityHostUrl: string,
+    authenticatorClientId: string,
+    authenticatorClientSecret: string
+    ): Promise<IGBInstance>;
     
-    getValue(instanceId: number, key: string): any;
-    acquireElevatedToken(instanceId):Promise<string>;
-    updateSecurityInfo(
-        instanceId: number,
-        authenticatorTenant: string,
-        authenticatorAuthorityHostUrl: string,
-        authenticatorClientId: string,
-        authenticatorClientSecret: string
-      ): Promise<IGBInstance> ;
-    setValue(instanceId: number, key: string, value: string): void;
+  getValue(instanceId: number, key: string): Promise<string>;
+  setValue(instanceId: number, key: string, value: string): void;
 }

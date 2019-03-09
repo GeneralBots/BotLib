@@ -1,5 +1,5 @@
+import { DialogContext } from "botbuilder-dialogs";
 
-import { WaterfallStepContext } from "botbuilder-dialogs";
 
-export class GBDialogStep extends WaterfallStepContext {
+export class GBDialogStep extends DialogContext {
 }
