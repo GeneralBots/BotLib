@@ -11,10 +11,13 @@ export class GBLog {
   public static info(params): void {
     logger.info(params);
   }
-  public static trace(params): void {
-    logger.trace(params);
+  public static debug(params): void {
+    logger.debug(params);
   }
   public static verbose(params): void {
     logger.verbose(params);
+  }
+  public static silly(params): void {
+    logger.silly(params);
   }
 }
