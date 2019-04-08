@@ -39,7 +39,7 @@
     "@types/sequelize": "4.27.46",
     "@types/winston": "2.4.4",
     "chai": "4.2.0",
-    "mocha": "6.0.2",
+    "mocha": "6.1.1",
     "mocha-typescript": "1.1.17",
     "ts-node": "8.0.3",
     "typedoc": "0.14.2",
