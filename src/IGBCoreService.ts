@@ -43,8 +43,8 @@ import { IGBInstallationDeployer } from "./IGBInstallationDeployer";
 export interface IGBCoreService {
     sequelize: Sequelize
     syncDatabaseStructure()
-    loadInstances(): Promise<IGBInstance[]> ;
-    loadInstance(botId: string): Promise<IGBInstance> ;
+    loadInstances(): Promise<IGBInstance[]>;
+    loadInstance(botId: string): Promise<IGBInstance>;
     loadInstanceById(instanceId: number): Promise<IGBInstance>;
     initStorage(): Promise<any>;
     createBootInstance(core: IGBCoreService, installationDeployer: IGBInstallationDeployer, proxyAddress: string);
@@ -56,5 +56,6 @@ export interface IGBCoreService {
     saveInstance(fullInstance: any);
     loadAllInstances(core: IGBCoreService, azureDeployer: IGBInstallationDeployer, proxyAddress: string);
     openBrowserInDevelopment();
+    installWebHook(isGet: boolean, url: string, callback: any);
 
 }
