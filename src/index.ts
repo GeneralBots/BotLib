@@ -30,15 +30,18 @@
 |                                                                              |
 \******************************************************************************/
 
-'use strict'
+"use strict";
 
-export { Sequelize } from 'sequelize-typescript'
-export { IGBConversationalService } from './IGBConversationalService'
-export { IGBCoreService } from './IGBCoreService'
-export { IGBDialog } from './IGBDialog'
-export { IGBPackage } from './IGBPackage'
-export { IGBInstance } from './IGBInstance'
-export { GBError, GBERROR_TYPE } from './GBError'
-export { GBService } from './GBService'
-export { GBMinInstance } from './GBMinInstance'
-export { IGBAdminService } from './IGBAdminService'
+export { Sequelize } from "sequelize-typescript";
+export { IGBConversationalService } from "./IGBConversationalService";
+export { IGBCoreService } from "./IGBCoreService";
+export { IGBDialog } from "./IGBDialog";
+export { IGBPackage } from "./IGBPackage";
+export { IGBInstance } from "./IGBInstance";
+export { GBError, GBERROR_TYPE } from "./GBError";
+export { GBService } from "./GBService";
+export { GBMinInstance } from "./GBMinInstance";
+export { IGBAdminService } from "./IGBAdminService";
+export { IGBInstallationDeployer } from "./IGBInstallationDeployer";
+export { GBDialogStep } from "./GBDialogStep"; 
+export { GBLog } from "./GBLog"; 

@@ -41,8 +41,8 @@ export class GBError {
   static createFromCode(GBERROR_TYPE): any { }
 
   getMessageFromErrorCode(type: GBERROR_TYPE) {
-    if (type == GBERROR_TYPE.nlpGeneralError) {
-      return `GuaribasBusinessError: Error accessing NLP, check of the service.`
+    if (type === GBERROR_TYPE.nlpGeneralError) {
+      return `Error accessing NLP, check of the service.`
     }
   }
 

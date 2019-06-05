@@ -30,32 +30,47 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict"
-
-import { Sequelize } from "sequelize-typescript"
-import { IGBInstance } from "./IGBInstance"
-import { IGBInstallationDeployer } from "./IGBInstallationDeployer";
-
 /**
- * This interface defines the core service which is shared among
- * bot packages so they can have direct access to base services.
+ * @fileoverview Logging support.
  */
-export interface IGBCoreService {
-    sequelize: Sequelize
-    syncDatabaseStructure()
-    loadInstances(): Promise<IGBInstance[]>;
-    loadInstance(botId: string): Promise<IGBInstance>;
-    loadInstanceById(instanceId: number): Promise<IGBInstance>;
-    initStorage(): Promise<any>;
-    createBootInstance(core: IGBCoreService, installationDeployer: IGBInstallationDeployer, proxyAddress: string);
-    ensureAdminIsSecured();
-    loadSysPackages(core: IGBCoreService);
-    ensureProxy(port): Promise<string>;
-    ensureInstances(instances: IGBInstance[], bootInstance: any, core: IGBCoreService);
-    checkStorage(azureDeployer: IGBInstallationDeployer);
-    saveInstance(fullInstance: any);
-    loadAllInstances(core: IGBCoreService, azureDeployer: IGBInstallationDeployer, proxyAddress: string);
-    openBrowserInDevelopment();
-    installWebHook(isGet: boolean, url: string, callback: any);
 
-}
+const { createLogger, format, transports } = require('winston');
+
+const config = {
+  levels: {
+    error: 0,
+    debug: 1,
+    warn: 2,
+    data: 3,
+    info: 4,
+    verbose: 5,
+    silly: 6,
+    custom: 7
+  },
+  colors: {
+    error: 'red',
+    debug: 'blue',
+    warn: 'yellow',
+    data: 'grey',
+    info: 'green',
+    verbose: 'cyan',
+    silly: 'magenta',
+    custom: 'yellow'
+  }
+};
+
+const logger = createLogger({
+  format: format.combine(
+    format.colorize(),
+    format.simple(),
+    format.label({ label: 'GeneralBots' }),
+    format.timestamp(),
+    format.printf(nfo => {
+      return `${nfo.timestamp} [${nfo.label}] ${nfo.level}: ${nfo.message}`;
+    })
+  ),
+  levels: config.levels,
+  transports: [new transports.Console()]
+});
+
+module.exports = logger;

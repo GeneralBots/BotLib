@@ -30,32 +30,29 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict"
+"use strict";
 
-import { Sequelize } from "sequelize-typescript"
-import { IGBInstance } from "./IGBInstance"
-import { IGBInstallationDeployer } from "./IGBInstallationDeployer";
+import { IGBInstance } from "./IGBInstance";
 
-/**
- * This interface defines the core service which is shared among
- * bot packages so they can have direct access to base services.
- */
-export interface IGBCoreService {
-    sequelize: Sequelize
-    syncDatabaseStructure()
-    loadInstances(): Promise<IGBInstance[]>;
-    loadInstance(botId: string): Promise<IGBInstance>;
-    loadInstanceById(instanceId: number): Promise<IGBInstance>;
-    initStorage(): Promise<any>;
-    createBootInstance(core: IGBCoreService, installationDeployer: IGBInstallationDeployer, proxyAddress: string);
-    ensureAdminIsSecured();
-    loadSysPackages(core: IGBCoreService);
-    ensureProxy(port): Promise<string>;
-    ensureInstances(instances: IGBInstance[], bootInstance: any, core: IGBCoreService);
-    checkStorage(azureDeployer: IGBInstallationDeployer);
-    saveInstance(fullInstance: any);
-    loadAllInstances(core: IGBCoreService, azureDeployer: IGBInstallationDeployer, proxyAddress: string);
-    openBrowserInDevelopment();
-    installWebHook(isGet: boolean, url: string, callback: any);
-
+export interface IGBInstallationDeployer {
+  updateBotProxy(botId: string, group: string, endpoint: string);
+  getSubscriptions(credentials);
+  getKBSearchSchema(indexName);
+  openStorageFirewall(groupName, serverName);
+  deployFarm(
+    proxyAddress: string,
+    instance: IGBInstance,
+    credentials,
+    subscriptionId: string
+  ): Promise<IGBInstance>;
+  deployToCloud(
+    title: string,
+    username: string,
+    password: string,
+    cloudLocation: string,
+    authoringKey: string,
+    appId: string,
+    appPassword: string,
+    subscriptionId: string
+  );
 }
