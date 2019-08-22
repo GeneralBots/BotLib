@@ -52,6 +52,7 @@ export class GBMinInstance {
   dialogs: DialogSet;
   userState: UserState;
   userProfile: any;
+  whatsAppDirectLine: any;
 
   cbMap: {};
   scriptMap: {};

@@ -44,6 +44,7 @@ export interface IGBCoreService {
     sequelize: Sequelize
     syncDatabaseStructure()
     loadInstances(): Promise<IGBInstance[]>;
+    deleteInstance(botId: string): Promise<void>;
     loadInstance(botId: string): Promise<IGBInstance>;
     loadInstanceById(instanceId: number): Promise<IGBInstance>;
     initStorage(): Promise<any>;
