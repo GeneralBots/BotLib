@@ -1,10 +1,10 @@
 {
   "name": "botlib",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp) and Libray packages (.gblib)",
   "main": "dist/index.js",
   "types": "dist/index",
-  "homepage": "http://www.generalbot.com",
+  "homepage": "http://www.generalbots.ai",
   "contributors": [
     "Rodrigo Rodriguez <me@rodrigorodriguez.com>",
     "Jorge Ramos <jramos@pobox.com>"
