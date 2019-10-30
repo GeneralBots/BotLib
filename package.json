@@ -28,7 +28,7 @@
     "ms": "2.1.1",
     "pragmatismo-io-framework": "1.0.19",
     "reflect-metadata": "0.1.13",
-    "sequelize": "5.8.6",
+    "sequelize": "5.15.1",
     "sequelize-typescript": "0.6.10",
     "wait-until": "0.0.2",
     "winston": "3.2.1"
