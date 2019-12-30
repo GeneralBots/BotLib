@@ -1,0 +1,166 @@
+async                      😎  MAJOR UP  Major update available. https://caolan.github.io/async/
+                                        npm install --save async@3.1.0 to go from 2.6.3 to 3.1.0
+                           😕  NOTUSED?  Still using async?
+                                        Depcheck did not find code similar to require('async') or import from 'async'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save async
+
+botbuilder                 😎  MINOR UP  Minor update available. https://github.com/Microsoft/botbuilder-js#readme
+                                        npm install --save botbuilder@4.7.0 to go from 4.6.0 to 4.7.0
+                           😕  NOTUSED?  Still using botbuilder?
+                                        Depcheck did not find code similar to require('botbuilder') or import from 'botbuilder'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save botbuilder
+
+botbuilder-ai              😎  MINOR UP  Minor update available. https://github.com/Microsoft/botbuilder-js#readme
+                                        npm install --save botbuilder-ai@4.7.0 to go from 4.6.0 to 4.7.0
+                           😕  NOTUSED?  Still using botbuilder-ai?
+                                        Depcheck did not find code similar to require('botbuilder-ai') or import from 'botbuilder-ai'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save botbuilder-ai
+
+botbuilder-azure           😎  MINOR UP  Minor update available. https://github.com/Microsoft/botbuilder-js#readme
+                                        npm install --save botbuilder-azure@4.7.0 to go from 4.6.0 to 4.7.0
+                           😕  NOTUSED?  Still using botbuilder-azure?
+                                        Depcheck did not find code similar to require('botbuilder-azure') or import from 'botbuilder-azure'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save botbuilder-azure
+
+botbuilder-choices         😕  NOTUSED?  Still using botbuilder-choices?
+                                        Depcheck did not find code similar to require('botbuilder-choices') or import from 'botbuilder-choices'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save botbuilder-choices
+
+botbuilder-dialogs         😎  MINOR UP  Minor update available. https://github.com/Microsoft/botbuilder-js#readme
+                                        npm install --save botbuilder-dialogs@4.7.0 to go from 4.6.0 to 4.7.0
+                           😕  NOTUSED?  Still using botbuilder-dialogs?
+                                        Depcheck did not find code similar to require('botbuilder-dialogs') or import from 'botbuilder-dialogs'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save botbuilder-dialogs
+
+botbuilder-prompts         😕  NOTUSED?  Still using botbuilder-prompts?
+                                        Depcheck did not find code similar to require('botbuilder-prompts') or import from 'botbuilder-prompts'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save botbuilder-prompts
+
+chrono-node                😕  NOTUSED?  Still using chrono-node?
+                                        Depcheck did not find code similar to require('chrono-node') or import from 'chrono-node'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save chrono-node
+
+dotenv-extended            😎  MINOR UP  Minor update available. https://github.com/keithmorris/node-dotenv-extended#readme
+                                        npm install --save dotenv-extended@2.7.1 to go from 2.5.0 to 2.7.1
+                           😕  NOTUSED?  Still using dotenv-extended?
+                                        Depcheck did not find code similar to require('dotenv-extended') or import from 'dotenv-extended'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save dotenv-extended
+
+iconv-lite                 😕  NOTUSED?  Still using iconv-lite?
+                                        Depcheck did not find code similar to require('iconv-lite') or import from 'iconv-lite'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save iconv-lite
+
+ms                         😕  NOTUSED?  Still using ms?
+                                        Depcheck did not find code similar to require('ms') or import from 'ms'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save ms
+
+pragmatismo-io-framework   😕  NOTUSED?  Still using pragmatismo-io-framework?
+                                        Depcheck did not find code similar to require('pragmatismo-io-framework') or import from 'pragmatismo-io-framework'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save pragmatismo-io-framework
+
+reflect-metadata           😕  NOTUSED?  Still using reflect-metadata?
+                                        Depcheck did not find code similar to require('reflect-metadata') or import from 'reflect-metadata'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save reflect-metadata
+
+sequelize                  😎  PATCH UP  Patch update available. https://sequelize.org/
+                                        npm install --save sequelize@5.21.3 to go from 5.21.2 to 5.21.3
+                           😕  NOTUSED?  Still using sequelize?
+                                        Depcheck did not find code similar to require('sequelize') or import from 'sequelize'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save sequelize
+
+sequelize-typescript       😎  MAJOR UP  Major update available. https://github.com/RobinBuschmann/sequelize-typescript#readme
+                                        npm install --save sequelize-typescript@1.1.0 to go from 0.6.11 to 1.1.0
+                           😕  NOTUSED?  Still using sequelize-typescript?
+                                        Depcheck did not find code similar to require('sequelize-typescript') or import from 'sequelize-typescript'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save sequelize-typescript
+
+wait-until                 😕  NOTUSED?  Still using wait-until?
+                                        Depcheck did not find code similar to require('wait-until') or import from 'wait-until'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save wait-until
+
+winston                    😕  NOTUSED?  Still using winston?
+                                        Depcheck did not find code similar to require('winston') or import from 'winston'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save winston
+
+@types/chai                😎  PATCH UP  Patch update available. https://github.com/DefinitelyTyped/DefinitelyTyped
+                                        npm install --save-dev @types/chai@4.2.7 to go from 4.2.5 to 4.2.7
+
+@types/sequelize           😎  PATCH UP  Patch update available. https://github.com/DefinitelyTyped/DefinitelyTyped
+                                        npm install --save-dev @types/sequelize@4.28.8 to go from 4.28.6 to 4.28.8
+
+chai                       😕  NOTUSED?  Still using chai?
+                                        Depcheck did not find code similar to require('chai') or import from 'chai'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save-dev chai
+
+mocha-typescript           😕  NOTUSED?  Still using mocha-typescript?
+                                        Depcheck did not find code similar to require('mocha-typescript') or import from 'mocha-typescript'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save-dev mocha-typescript
+
+ts-node                    😎  PATCH UP  Patch update available. https://github.com/TypeStrong/ts-node
+                                        npm install --save-dev ts-node@8.5.4 to go from 8.5.0 to 8.5.4
+                           😕  NOTUSED?  Still using ts-node?
+                                        Depcheck did not find code similar to require('ts-node') or import from 'ts-node'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save-dev ts-node
+
+typedoc                    😎  NEW VER!  NonSemver update available. https://typedoc.org
+                                        npm install --save-dev typedoc@0.15.6 to go from 0.15.1 to 0.15.6
+                           😕  NOTUSED?  Still using typedoc?
+                                        Depcheck did not find code similar to require('typedoc') or import from 'typedoc'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save-dev typedoc
+
+typescript                 😎  PATCH UP  Patch update available. https://www.typescriptlang.org/
+                                        npm install --save-dev typescript@3.7.4 to go from 3.7.2 to 3.7.4
+                           😕  NOTUSED?  Still using typescript?
+                                        Depcheck did not find code similar to require('typescript') or import from 'typescript'.
+                                        Check your code before removing as depcheck isn't able to foresee all ways dependencies can be used.
+                                        Use --skip-unused to skip this check.
+                                        To remove this package: npm uninstall --save-dev typescript
+
+underscore                 😟  PKG ERR!  Not in the package.json. Found in: /docs/assets/js/main.js
+                           😎  MINOR UP  Minor update available. http://underscorejs.org
+                                        npm install --save underscore@1.9.1 to go from 1.8.3 to 1.9.1
+
+
+
