@@ -58,5 +58,5 @@ export interface IGBCoreService {
     loadAllInstances(core: IGBCoreService, azureDeployer: IGBInstallationDeployer, proxyAddress: string);
     openBrowserInDevelopment();
     installWebHook(isGet: boolean, url: string, callback: any);
-
+    setWWWRoot(localPath: string);
 }

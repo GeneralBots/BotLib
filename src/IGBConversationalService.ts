@@ -43,4 +43,5 @@ export interface IGBConversationalService {
   sendSms(min: GBMinInstance, mobile: string, text: string);
   routeNLP(step: GBDialogStep, min: GBMinInstance, text: string): Promise<boolean>;
   getCurrentLanguage(step: GBDialogStep);
+  getNewMobileCode();
 }

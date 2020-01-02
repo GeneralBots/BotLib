@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp) and Libray packages (.gblib)",
   "main": "dist/index.js",
   "types": "dist/index",
