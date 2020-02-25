@@ -59,4 +59,5 @@ export interface IGBCoreService {
     openBrowserInDevelopment();
     installWebHook(isGet: boolean, url: string, callback: any);
     setWWWRoot(localPath: string);
+    setEntryPointDialog(dialogName: string);
 }

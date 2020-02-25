@@ -39,6 +39,7 @@ export interface IGBInstallationDeployer {
   getSubscriptions(credentials);
   getKBSearchSchema(indexName);
   openStorageFirewall(groupName, serverName);
+  createApplication(token: string, name: string);
   deployFarm(
     proxyAddress: string,
     instance: IGBInstance,
