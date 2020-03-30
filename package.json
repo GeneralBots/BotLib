@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "1.4.0",
+  "version": "1.4.2",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp) and Libray packages (.gblib)",
   "main": "dist/index.js",
   "types": "dist/index",
@@ -8,7 +8,8 @@
   "contributors": [
     "Rodrigo Rodriguez <me@rodrigorodriguez.com>",
     "João Antonio Ferreira <joao.parana@gmail.com>",
-    "Jorge Ramos <jramos@pobox.com>"
+    "Jorge Ramos <jramos@pobox.com>",
+    "PH <ph.an@outlook.com>"
   ],
   "license": "AGPL-3.0",
   "repository": {
@@ -21,35 +22,33 @@
     "build-lib": "tsc"
   },
   "dependencies": {
-    "async": "^3.1.0",
-    "botbuilder": "^4.7.0",
-    "botbuilder-ai": "^4.7.0",
-    "botbuilder-azure": "^4.7.0",
-    "botbuilder-choices": "4.0.0-preview1.2",
-    "botbuilder-dialogs": "^4.7.0",
-    "botbuilder-prompts": "4.0.0-preview1.2",
+    "async": "3.1.0",
+    "botbuilder": "4.7.0",
+    "botbuilder-ai": "4.7.0",
+    "botbuilder-azure": "4.7.0",
+    "botbuilder-dialogs": "4.7.0",
     "chrono-node": "1.3.11",
-    "dotenv-extended": "^2.7.1",
+    "dotenv-extended": "2.7.1",
     "iconv-lite": "0.5.0",
     "ms": "2.1.2",
     "pragmatismo-io-framework": "1.0.20",
     "reflect-metadata": "0.1.13",
-    "sequelize": "^5.21.3",
-    "sequelize-typescript": "^1.1.0",
-    "underscore": "^1.9.1",
+    "sequelize": "5.21.5",
+    "sequelize-typescript": "1.1.0",
+    "underscore": "1.9.1",
     "wait-until": "0.0.2",
     "winston": "3.2.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.7",
+    "@types/chai": "4.2.7",
     "@types/mocha": "5.2.7",
-    "@types/sequelize": "^4.28.8",
+    "@types/sequelize": "4.28.8",
     "@types/winston": "2.4.4",
     "chai": "4.2.0",
     "mocha": "6.2.2",
     "mocha-typescript": "1.1.17",
-    "ts-node": "^8.5.4",
-    "typedoc": "^0.15.6",
-    "typescript": "^3.7.4"
+    "ts-node": "8.5.4",
+    "typedoc": "0.15.6",
+    "typescript": "3.7.4"
   }
 }

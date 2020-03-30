@@ -30,39 +30,8 @@
 |                                                                             |
 \*****************************************************************************/
 
-import { BotAdapter, UserState } from "botbuilder";
-import { DialogSet } from "botbuilder-dialogs";
-import { IGBInstance } from "./IGBinstance";
-import { IGBCoreService } from "./IGBCoreService";
-import { IGBConversationalService, IGBPackage } from ".";
-import { AzureText } from "pragmatismo-io-framework";
-import { IGBAdminService } from "./IGBAdminService";
-import { IGBDeployer } from "./IGBDeployer";
-import { IGBKBService } from "./IGBKBService";
+"use strict";
 
-/** Minimal services for bot. */
-
-export class GBMinInstance {
-  packages: IGBPackage[];
-  botId: string;
-  instance: IGBInstance;
-  core: IGBCoreService;
-  conversationalService: IGBConversationalService;
-  kbService: IGBKBService;
-  adminService: IGBAdminService;
-  deployService: IGBDeployer;
-  textServices: AzureText;
-  bot: BotAdapter;
-  dialogs: DialogSet;
-  userState: UserState;
-  userProfile: any;
-  whatsAppDirectLine: any;
-
-  cbMap: {};
-  scriptMap: {};
-  sandBoxMap: {};
-
-  constructor() {
-    this.packages = [];
-  }
+export interface IGBKBService {
+  getAnswerTextByMediaName(instanceId: number, answerMediaName: string): Promise<string>;
 }

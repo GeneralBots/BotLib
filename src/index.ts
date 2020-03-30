@@ -34,6 +34,7 @@
 
 export { Sequelize } from "sequelize-typescript";
 export { IGBConversationalService } from "./IGBConversationalService";
+export { IGBKBService } from "./IGBKBService";
 export { IGBCoreService } from "./IGBCoreService";
 export { IGBDialog } from "./IGBDialog";
 export { IGBPackage } from "./IGBPackage";

@@ -44,4 +44,5 @@ export interface IGBConversationalService {
   routeNLP(step: GBDialogStep, min: GBMinInstance, text: string): Promise<boolean>;
   getCurrentLanguage(step: GBDialogStep);
   getNewMobileCode();
+  sendMarkdownToMobile(min: GBMinInstance, step: GBDialogStep, mobile: string, text: string);
 }
