@@ -59,7 +59,6 @@ export interface IGBInstance {
   whatsappBotKey: string;
   whatsappServiceNumber: string;
   whatsappServiceUrl: string;
-  whatsappServiceWebhookUrl: string;
   smsKey: string;
   smsSecret: string;
   smsServiceNumber: string;
