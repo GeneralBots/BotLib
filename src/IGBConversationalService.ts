@@ -38,11 +38,12 @@ import { GBDialogStep } from "./GBDialogStep";
 export interface IGBConversationalService {
   sendEvent(step: GBDialogStep, name: string, value: Object);
   sendEvent(step: GBDialogStep, name: string, value: Object);
-  sendFile(min: GBMinInstance, step: GBDialogStep, url: string);
+  sendFile(min: GBMinInstance, step: GBDialogStep, url: string, caption: string);
   sendAudio(min: GBMinInstance, step: GBDialogStep, url: string);
   sendSms(min: GBMinInstance, mobile: string, text: string);
   routeNLP(step: GBDialogStep, min: GBMinInstance, text: string): Promise<boolean>;
   getCurrentLanguage(step: GBDialogStep);
   getNewMobileCode();
   sendMarkdownToMobile(min: GBMinInstance, step: GBDialogStep, mobile: string, text: string);
+  
 }
