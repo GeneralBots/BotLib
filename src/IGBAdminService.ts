@@ -33,6 +33,7 @@
 "use strict";
 
 import { IGBInstance } from "./IGBinstance";
+import { GBMinInstance } from "./GBMinInstance";
 
 export interface IGBAdminService {
   acquireElevatedToken(instanceId): Promise<string>;
@@ -42,8 +43,9 @@ export interface IGBAdminService {
     authenticatorAuthorityHostUrl: string,
     authenticatorClientId: string,
     authenticatorClientSecret: string
-    ): Promise<IGBInstance>;
-    
+  ): Promise<IGBInstance>;
+
   getValue(instanceId: number, key: string): Promise<string>;
   setValue(instanceId: number, key: string, value: string): void;
+  publish(min: GBMinInstance, packageName: string, republish: boolean): Promise<void>;
 }

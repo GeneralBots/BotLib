@@ -44,5 +44,6 @@ export { GBService } from "./GBService";
 export { GBMinInstance } from "./GBMinInstance";
 export { IGBAdminService } from "./IGBAdminService";
 export { IGBInstallationDeployer } from "./IGBInstallationDeployer";
+export { IGBDeployer } from "./IGBDeployer";
 export { GBDialogStep } from "./GBDialogStep"; 
 export { GBLog } from "./GBLog"; 

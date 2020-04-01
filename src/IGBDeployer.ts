@@ -33,8 +33,11 @@
 "use strict";
 
 import { IGBInstance } from "./IGBinstance";
+import { GBMinInstance } from "./GBMinInstance";
 
 export interface IGBDeployer {
-
-  deployBlankBot(botId: string);
+  undeployPackageFromLocalPath(instance: IGBInstance, localPath: string): Promise<void>;
+  deployPackage(min: GBMinInstance, localPath: string): Promise<void>;
+  deployBlankBot(botId: string): Promise<IGBInstance>;
+  rebuildIndex(instance: IGBInstance, searchSchema: any): Promise<void>;
 }
