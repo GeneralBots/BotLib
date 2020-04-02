@@ -48,30 +48,30 @@ export interface IGBPackage{
     /** 
      * Called when a package is being loaded, once per server or at demand. 
      */
-    loadPackage(core: IGBCoreService, sequelize: Sequelize): void
+    loadPackage(core: IGBCoreService, sequelize: Sequelize): Promise<void>
 
     /** 
      * Called when a package needs to be unloaded. 
      */
-    unloadPackage(core: IGBCoreService): void
+    unloadPackage(core: IGBCoreService): Promise<void>
 
    /** 
      * Called when a new bot instance is loaded. 
      */
-    getDialogs(min: GBMinInstance) 
+    getDialogs(min: GBMinInstance)
 
     /** 
      * Called when a new bot instance is loaded. 
      */
-    loadBot(min: GBMinInstance): void
+    loadBot(min: GBMinInstance): Promise<void>
 
     /** 
      * Called whenever a bot instance needs to be shutdown.
      */
-    unloadBot(min: GBMinInstance): void
+    unloadBot(min: GBMinInstance): Promise<void>
 
     /**
      * Called in each new session. 
      */
-    onNewSession(min: GBMinInstance, step: GBDialogStep): void
+    onNewSession(min: GBMinInstance, step: GBDialogStep): Promise<void>
 }
