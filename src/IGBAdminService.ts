@@ -40,9 +40,7 @@ export interface IGBAdminService {
   updateSecurityInfo(
     instanceId: number,
     authenticatorTenant: string,
-    authenticatorAuthorityHostUrl: string,
-    authenticatorClientId: string,
-    authenticatorClientSecret: string
+    authenticatorAuthorityHostUrl: string
   ): Promise<IGBInstance>;
 
   getValue(instanceId: number, key: string): Promise<string>;

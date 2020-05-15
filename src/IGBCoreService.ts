@@ -46,7 +46,7 @@ export interface IGBCoreService {
     syncDatabaseStructure()
     loadInstances(): Promise<IGBInstance[]>;
     deleteInstance(botId: string): Promise<void>;
-    loadInstance(botId: string): Promise<IGBInstance>;
+    loadInstanceByBotId(botId: string): Promise<IGBInstance>;
     loadInstanceById(instanceId: number): Promise<IGBInstance>;
     initStorage(): Promise<any>;
     createBootInstance(core: IGBCoreService, installationDeployer: IGBInstallationDeployer, proxyAddress: string);

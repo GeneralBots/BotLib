@@ -37,8 +37,6 @@ export interface IGBInstance {
   whoAmIVideo: string;
   botEndpoint: string;
   authenticatorTenant: string;
-  authenticatorClientId: string;
-  authenticatorClientSecret: string;
   authenticatorAuthorityHostUrl: string;
   cloudSubscriptionId: string;
   cloudUsername: string;

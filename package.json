@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp) and Libray packages (.gblib)",
   "main": "dist/index.js",
   "types": "dist/index",
@@ -37,17 +37,11 @@
     "sequelize": "5.21.5",
     "sequelize-typescript": "1.1.0",
     "underscore": "1.9.1",
-    "wait-until": "0.0.2",
     "winston": "3.2.1"
   },
   "devDependencies": {
-    "@types/chai": "4.2.7",
-    "@types/mocha": "5.2.7",
     "@types/sequelize": "4.28.8",
     "@types/winston": "2.4.4",
-    "chai": "4.2.0",
-    "mocha": "6.2.2",
-    "mocha-typescript": "1.1.17",
     "ts-node": "8.5.4",
     "typedoc": "0.15.6",
     "typescript": "3.7.4"
