@@ -45,5 +45,11 @@ export interface IGBConversationalService {
   getCurrentLanguage(step: GBDialogStep);
   getNewMobileCode();
   sendMarkdownToMobile(min: GBMinInstance, step: GBDialogStep, mobile: string, text: string);
-  
+  translate(
+    key: string,
+    endPoint: string,
+    text: string,
+    language: string
+  ): Promise<string>;
+
 }

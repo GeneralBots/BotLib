@@ -86,4 +86,6 @@ export interface IGBInstance {
   storageDialect: string;
   storagePath: string;
   adminPass: string;
+  translatorKey: string;
+  translatorEndpoint: string;  
 }
