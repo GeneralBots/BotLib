@@ -44,6 +44,7 @@ export interface IGBInstance {
   cloudLocation: string;
   instanceId: number;
   title: string;
+  activationCode: string;
   description: string;
   version: string;
   enabledAdmin: boolean;
