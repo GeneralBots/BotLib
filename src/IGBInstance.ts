@@ -89,4 +89,5 @@ export interface IGBInstance {
   adminPass: string;
   translatorKey: string;
   translatorEndpoint: string;  
+  params: string;
 }

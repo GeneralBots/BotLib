@@ -74,4 +74,12 @@ export interface IGBPackage{
      * Called in each new session. 
      */
     onNewSession(min: GBMinInstance, step: GBDialogStep): Promise<void>
+
+    /**
+     * Exchange data between BotServer and .gbapp/.gblib
+     * @param kind 'newMessage', 'getBroadcast', 'getKeywords'
+     * @param data 
+     */
+    onExchangeData (min: GBMinInstance, kind: string, data: any);
+
 }
