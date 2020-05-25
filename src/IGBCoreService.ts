@@ -47,6 +47,7 @@ export interface IGBCoreService {
     loadInstances(): Promise<IGBInstance[]>;
     deleteInstance(botId: string): Promise<void>;
     loadInstanceByBotId(botId: string): Promise<IGBInstance>;
+    loadInstanceByActivationCode(activationCode: string): Promise<IGBInstance>;
     loadInstanceById(instanceId: number): Promise<IGBInstance>;
     initStorage(): Promise<any>;
     createBootInstance(core: IGBCoreService, installationDeployer: IGBInstallationDeployer, proxyAddress: string);

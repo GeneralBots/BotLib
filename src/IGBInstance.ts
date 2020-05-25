@@ -90,4 +90,5 @@ export interface IGBInstance {
   translatorKey: string;
   translatorEndpoint: string;  
   params: string;
+  state: string;
 }
