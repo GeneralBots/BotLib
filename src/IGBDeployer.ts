@@ -39,5 +39,6 @@ export interface IGBDeployer {
   undeployPackageFromLocalPath(instance: IGBInstance, localPath: string): Promise<void>;
   deployPackage(min: GBMinInstance, localPath: string): Promise<void>;
   deployBlankBot(botId: string): Promise<IGBInstance>;
+  botExists(botId: string): Promise<Boolean>;
   rebuildIndex(instance: IGBInstance, searchSchema: any): Promise<void>;
 }
