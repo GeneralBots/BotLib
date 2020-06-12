@@ -44,6 +44,7 @@ import { IGBKBService } from "./IGBKBService";
 
 export class GBMinInstance {
   packages: IGBPackage[];
+  appPackages: IGBPackage[];
   botId: string;
   instance: IGBInstance;
   core: IGBCoreService;
