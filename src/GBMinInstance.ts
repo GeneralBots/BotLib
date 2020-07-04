@@ -59,6 +59,7 @@ export class GBMinInstance {
   userProfile: any;
   whatsAppDirectLine: any;
 
+
   cbMap: {};
   scriptMap: {};
   sandBoxMap: {};

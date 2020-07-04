@@ -62,4 +62,5 @@ export interface IGBCoreService {
     installWebHook(isGet: boolean, url: string, callback: any);
     setWWWRoot(localPath: string);
     setEntryPointDialog(dialogName: string);
+    getParam<T>(instance: IGBInstance, name: string, defaultValue?: T): any;
 }
