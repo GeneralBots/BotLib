@@ -63,8 +63,10 @@ export class GBMinInstance {
   cbMap: {};
   scriptMap: {};
   sandBoxMap: {};
+  gbappServices: [];
 
   constructor() {
     this.packages = [];
+    this.gbappServices = [];
   }
 }
