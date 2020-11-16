@@ -30,10 +30,10 @@
 |                                                                             |
 \*****************************************************************************/
 
-"use strict";
+'use strict';
 
-import { GBMinInstance } from "./GBMinInstance";
-import { GBDialogStep } from "./GBDialogStep";
+import { GBMinInstance } from './GBMinInstance';
+import { GBDialogStep } from './GBDialogStep';
 
 export interface IGBConversationalService {
   prompt(min: GBMinInstance, step: GBDialogStep, text: string);
@@ -47,11 +47,7 @@ export interface IGBConversationalService {
   getCurrentLanguage(step: GBDialogStep);
   getNewMobileCode();
   sendMarkdownToMobile(min: GBMinInstance, step: GBDialogStep, mobile: string, text: string);
-  translate(min: GBMinInstance,
-    key: string,
-    endPoint: string,
-    text: string,
-    language: string
-  ): Promise<string>;
-
+  translate(min: GBMinInstance, text: string, language: string): Promise<string>;
+  getLanguage(min: GBMinInstance, text: string): Promise<string>;
+  spellCheck(min: GBMinInstance, text: string): Promise<string>;
 }
