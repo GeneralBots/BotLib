@@ -44,6 +44,6 @@ export interface IGBAdminService {
   ): Promise<IGBInstance>;
 
   getValue(instanceId: number, key: string): Promise<string>;
-  setValue(instanceId: number, key: string, value: string): void;
+  setValue(instanceId: number, key: string, value: string): Promise<void>;
   publish(min: GBMinInstance, packageName: string, republish: boolean): Promise<void>;
 }
