@@ -57,6 +57,9 @@ export interface IGBInstance {
   googleBotKey: string;
   googleChatApiKey: string;
   googleChatSubscriptionName: string;
+  googleClientEmail: string;
+  googlePrivateKey: string;
+  googleProjectId: string;
   whatsappServiceKey: string;
   whatsappBotKey: string;
   whatsappServiceNumber: string;
