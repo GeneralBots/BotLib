@@ -64,6 +64,9 @@ export interface IGBInstance {
   whatsappBotKey: string;
   whatsappServiceNumber: string;
   whatsappServiceUrl: string;
+  facebookWorkplaceVerifyToken: string;
+  facebookWorkplaceAppSecret: string;
+  facebookWorkplaceAccessToken: string;
   smsKey: string;
   smsSecret: string;
   smsServiceNumber: string;
@@ -97,4 +100,5 @@ export interface IGBInstance {
   translatorEndpoint: string;  
   params: string;
   state: string;
+
 }
