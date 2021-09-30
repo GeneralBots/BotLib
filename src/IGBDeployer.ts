@@ -42,4 +42,5 @@ export interface IGBDeployer {
   botExists(botId: string): Promise<Boolean>;
   rebuildIndex(instance: IGBInstance, searchSchema: any): Promise<void>;
   refreshNLPEntity(instance: IGBInstance, listName, listData) : Promise<void>;
+  getBotManifest(instance: IGBInstance): Promise<Buffer>;
 }
