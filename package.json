@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "1.9.4",
+  "version": "1.9.5",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp) and Libray packages (.gblib)",
   "main": "dist/index.js",
   "types": "dist/index",
@@ -23,12 +23,12 @@
     "build-lib": "tsc"
   },
   "dependencies": {
-    "async": "3.2.0",
-    "botbuilder": "4.11.0",
-    "botbuilder-ai": "4.11.0",
-    "botbuilder-azure": "4.11.0",
-    "botbuilder-dialogs": "4.11.0",
-    "chrono-node": "2.2.7",
+    "async": "3.2.2",
+    "botbuilder": "4.14.1",
+    "botbuilder-ai": "4.14.1",
+    "botbuilder-azure": "4.14.1",
+    "botbuilder-dialogs": "4.14.1",
+    "chrono-node": "2.3.2",
     "dotenv-extended": "2.9.0",
     "iconv-lite": "0.6.3",
     "ms": "2.1.3",
@@ -40,10 +40,10 @@
     "winston": "3.3.3"
   },
   "devDependencies": {
-    "@types/sequelize": "4.28.9",
+    "@types/sequelize": "4.28.10",
     "@types/winston": "2.4.4",
-    "ts-node": "10.0.0",
-    "typedoc": "0.20.36",
-    "typescript": "4.3.2"
+    "ts-node": "10.4.0",
+    "typedoc": "0.22.8",
+    "typescript": "4.4.4"
   }
 }
