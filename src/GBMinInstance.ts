@@ -32,7 +32,7 @@
 
 import { BotAdapter, UserState } from "botbuilder";
 import { DialogSet } from "botbuilder-dialogs";
-import { IGBInstance } from "./IGBinstance";
+import { IGBInstance } from ".";
 import { IGBCoreService } from "./IGBCoreService";
 import { IGBConversationalService, IGBPackage } from ".";
 import { AzureText } from "pragmatismo-io-framework";

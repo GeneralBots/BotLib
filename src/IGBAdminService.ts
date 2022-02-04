@@ -32,7 +32,7 @@
 
 "use strict";
 
-import { IGBInstance } from "./IGBinstance";
+import { IGBInstance } from ".";
 import { GBMinInstance } from "./GBMinInstance";
 
 export interface IGBAdminService {
