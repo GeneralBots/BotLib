@@ -70,7 +70,15 @@ const logger = createLogger({
     })
   ),
   levels: config.levels,
-  transports: [new transports.Console()]
+  transports: [
+    new transports.Console()]
 });
 
-module.exports = logger;
+const logger2 = createLogger({
+  levels: config.levels,
+  transports: [new (transports.File)({
+    filename: 'GB.log.json', json: true
+  })]
+});
+
+module.exports = [logger, logger2];
