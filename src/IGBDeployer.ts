@@ -38,9 +38,9 @@ import { GBMinInstance } from "./GBMinInstance";
 export interface IGBDeployer {
   undeployPackageFromLocalPath(instance: IGBInstance, localPath: string): Promise<void>;
   deployPackage(min: GBMinInstance, localPath: string): Promise<void>;
-  deployBlankBot(botId: string): Promise<IGBInstance>;
+  deployBlankBot(botId: string, mobile: string, email: string): Promise<IGBInstance>;
   botExists(botId: string): Promise<Boolean>;
   rebuildIndex(instance: IGBInstance, searchSchema: any): Promise<void>;
-  refreshNLPEntity(instance: IGBInstance, listName, listData) : Promise<void>;
+  refreshNLPEntity(instance: IGBInstance, listName, listData): Promise<void>;
   getBotManifest(instance: IGBInstance): Promise<Buffer>;
 }
