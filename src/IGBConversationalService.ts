@@ -43,7 +43,7 @@ export interface IGBConversationalService {
   sendAudio(min: GBMinInstance, step: GBDialogStep, url: string);
   prompt(min: GBMinInstance, step: GBDialogStep, text: string);
   sendSms(min: GBMinInstance, mobile: string, text: string);
-  routeNLP(step: GBDialogStep, min: GBMinInstance, text: string): Promise<boolean>;
+  routeNLP(step: GBDialogStep, min: GBMinInstance, text: string);
   getCurrentLanguage(step: GBDialogStep);
   getNewMobileCode();
   sendMarkdownToMobile(min: GBMinInstance, step: GBDialogStep, mobile: string, text: string);

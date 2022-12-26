@@ -86,7 +86,6 @@ export interface IGBInstance {
   searchKey: string;
   searchIndex: string;
   searchIndexer: string;
-  nlpVsSearch: number;
   searchScore: number;
   nlpScore: number;
   storageUsername: string;
