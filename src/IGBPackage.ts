@@ -30,13 +30,12 @@
 |                                                                             |
 \*****************************************************************************/
 
+'use strict';
 
 import { IGBCoreService } from './IGBCoreService'
 import { Sequelize } from 'sequelize-typescript'
 import { GBMinInstance } from '.'
 import { GBDialogStep } from './GBDialogStep';
-
-// TODO: Include "use strict" in all files.
 
 export interface IGBPackage{
 
