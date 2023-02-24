@@ -63,10 +63,12 @@ const logger = createLogger({
   format: format.combine(
     format.colorize(),
     format.simple(),
-    format.label({ label: 'GeneralBots' }),
+    format.label({ label: 'GB' }),
     format.timestamp(),
     format.printf(nfo => {
-      return `${nfo.timestamp} [${nfo.label}] ${nfo.level}: ${nfo.message}`;
+      let message = `${nfo.timestamp} ${nfo.label} ${nfo.level} ${nfo.message}`;
+      message = message.replace(/\-|\.|\d\d\dZ|\:/gi, '' );
+      return message;
     })
   ),
   levels: config.levels,
