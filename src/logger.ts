@@ -66,9 +66,7 @@ const logger = createLogger({
     format.label({ label: 'GB' }),
     format.timestamp(),
     format.printf(nfo => {
-      let message = `${nfo.timestamp} ${nfo.label} ${nfo.level} ${nfo.message}`;
-      message = message.replace(/\-|\.|\d\d\dZ|\:/gi, '' );
-      return message;
+      return `${nfo.timestamp.replace(/\-|\.|\d\d\dZ|\:/gi, '' )} ${nfo.label} ${nfo.level} ${nfo.message}`;
     })
   ),
   levels: config.levels,
