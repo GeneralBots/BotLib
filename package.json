@@ -1,6 +1,6 @@
 {
   "name": "botlib",
-  "version": "3.0.9",
+  "version": "5.0.0",
   "description": "General Bot base library for building Node.js TypeScript Apps packages (.gbapp) and Libray packages (.gblib)",
   "main": "dist/index.js",
   "types": "dist/index",
@@ -23,30 +23,30 @@
     "build-lib": "tsc"
   },
   "dependencies": {
-    "async": "3.2.4",
-    "botbuilder": "4.18.0",
+    "async": "3.2.6",
+    "botbuilder": "4.23.0",
     "botbuilder-adapter-facebook": "1.0.12",
-    "botbuilder-ai": "4.18.0",
-    "botbuilder-azure": "4.18.0",
-    "botbuilder-dialogs": "4.18.0",
-    "botframework-connector": "4.18.0",
-    "chrono-node": "2.4.1",
+    "botbuilder-ai": "4.23.0",
+    "botbuilder-azure": "4.23.0",
+    "botbuilder-dialogs": "4.23.0",
+    "botframework-connector": "4.23.0",
+    "chrono-node": "2.7.5",
     "dotenv-extended": "2.9.0",
     "iconv-lite": "0.6.3",
     "ms": "2.1.3",
-    "pragmatismo-io-framework": "1.0.20",
-    "reflect-metadata": "0.1.13",
-    "sequelize": "6.25.6",
-    "sequelize-cli": "6.5.2",
-    "sequelize-typescript": "2.1.5",
-    "underscore": "1.13.6",
-    "winston": "^3.8.2"
+    "pragmatismo-io-framework": "1.1.1",
+    "reflect-metadata": "0.2.2",
+    "sequelize": "6.37.3",
+    "sequelize-cli": "6.6.2",
+    "sequelize-typescript": "2.1.6",
+    "underscore": "1.13.7",
+    "winston": "3.14.2"
   },
   "devDependencies": {
-    "@types/sequelize": "4.28.14",
+    "@types/sequelize": "4.28.20",
     "@types/winston": "2.4.4",
-    "ts-node": "10.9.1",
-    "typedoc": "0.23.21",
-    "typescript": "4.9.3"
+    "ts-node": "10.9.2",
+    "typedoc": "0.26.6",
+    "typescript": "5.5.4"
   }
 }

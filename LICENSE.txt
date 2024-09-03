@@ -1,5 +1,5 @@
-General Bots is licensed under a dual license. To check which license
-edition of General bots you have installed, please ask info@pragmatismo.io 
+General Bots® is licensed under a dual license. To check which license
+edition of General Bots® you have installed, please ask info@pragmatismo.io 
 informing your Customer ID.
 
 If you modify this Program, or any covered work, by combining it 
@@ -8,13 +8,13 @@ grant you additional permission to convey those packages (.gbapp,
 .gbkb, .gbtheme, .gbot) under terms of your choice, provided that 
 those terms do not place additional restrictions on the Program. 
 You are free to create either open-source as well private
-packages to the General Bots platform. AGPL enforces contributions 
+packages to the General Bots® platform. AGPL enforces contributions 
 to the server core so everyone wins.
 
-The following terms are important regarding the General Bots 
+The following terms are important regarding the General Bots® 
 Community Edition, licensed under AGPL V3:
 
-For General Bots community edition which stands under AGPL license the
+For General Bots® community edition which stands under AGPL license the
 following terms are significantly:
 
 

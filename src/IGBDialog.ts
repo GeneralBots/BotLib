@@ -1,14 +1,11 @@
-import { BotAdapter } from 'botbuilder'
 /*****************************************************************************\
-|                                               ( )_  _                       |
-|    _ _    _ __   _ _    __    ___ ___     _ _ | ,_)(_)  ___   ___     _     |
-|   ( '_`\ ( '__)/'_` ) /'_ `\/' _ ` _ `\ /'_` )| |  | |/',__)/' v `\ /'_`\   |
-|   | (_) )| |  ( (_| |( (_) || ( ) ( ) |( (_| || |_ | |\__, \| (˅) |( (_) )  |
-|   | ,__/'(_)  `\__,_)`\__  |(_) (_) (_)`\__,_)`\__)(_)(____/(_) (_)`\___/'  |
-|   | |                ( )_) |                                                |
-|   (_)                 \___/'                                                |
+|  █████  █████ ██    █ █████ █████   ████  ██      ████   █████ █████  ███ ® |
+| ██      █     ███   █ █     ██  ██ ██  ██ ██      ██  █ ██   ██  █   █      |
+| ██  ███ ████  █ ██  █ ████  █████  ██████ ██      ████   █   █   █    ██    |
+| ██   ██ █     █  ██ █ █     ██  ██ ██  ██ ██      ██  █ ██   ██  █      █   |
+|  █████  █████ █   ███ █████ ██  ██ ██  ██ █████   ████   █████   █   ███    |
 |                                                                             |
-| General Bots Copyright (c) Pragmatismo.io. All rights reserved.             |
+| General Bots Copyright (c) pragmatismo.cloud. All rights reserved.          |
 | Licensed under the AGPL-3.0.                                                |
 |                                                                             |
 | According to our dual licensing model, this program can be used either      |
@@ -24,7 +21,7 @@ import { BotAdapter } from 'botbuilder'
 | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                |
 | GNU Affero General Public License for more details.                         |
 |                                                                             |
-| "General Bots" is a registered trademark of Pragmatismo.io.                 |
+| "General Bots" is a registered trademark of pragmatismo.cloud.              |
 | The licensing of the program under the AGPLv3 does not imply a              |
 | trademark license. Therefore any rights, title and interest in              |
 | our trademarks remain entirely with us.                                     |
@@ -33,6 +30,7 @@ import { BotAdapter } from 'botbuilder'
 
 "use strict"
 
+import { BotAdapter } from "botbuilder"
 import { GBService } from "./GBService"
 
 export class IGBDialog {
